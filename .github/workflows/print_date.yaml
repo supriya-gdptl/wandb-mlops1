@@ -22,3 +22,4 @@ jobs:
           git add --all
           now=$(date)
           git commit -m "scheduled write date on ${now}"
+          git push
