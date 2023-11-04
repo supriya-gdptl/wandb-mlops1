@@ -1,7 +1,7 @@
 name: Update Readme.md with date
 on:
   schedule:
-  - cron: "*/5 * * * *"
+  - cron: "5 16 * * *"
 
 jobs:
   write-date:
