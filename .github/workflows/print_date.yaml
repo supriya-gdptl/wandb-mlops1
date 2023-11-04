@@ -11,17 +11,5 @@ jobs:
         uses: actions/checkout@v4
         
       - name: write date
-        run: |
-          # date > README.md
-          # cat README.md
-          echo "Date now is: $(date)"
-      # - name: push changes to repo
-      #   run: |
-      #     git config --global user.name "Supriya Gadi Patil"
-      #     git config --global user.email "supriya.pandhre9@gmail.com"
-      #     git add --all
-      #     now=$(date)
-      #     git commit -m "scheduled write date on ${now}"
-      #     git push 
-  
+        run: echo "Date now is: $(date)"
         
