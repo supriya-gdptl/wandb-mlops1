@@ -1,0 +1,25 @@
+name: Update Readme.md with date
+on:
+  schedule:
+  - cron: "15 9 * * 1-5"
+
+jobs:
+  write-date:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v3
+        
+      - name: write date
+        run: |
+          date > README.md
+      - name: push changes to repo
+        run: |
+          git config --global user.name "Supriya Gadi Patil"
+          git config --global user.email "supriyagdptl@gmail.com"
+          git add --all
+          now=$(date)
+          git commit -m "scheduled write date on ${now}"
+          git push 
+  
+        
