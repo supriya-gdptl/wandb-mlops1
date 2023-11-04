@@ -1,2 +1,1 @@
-# wandb-mlops1
-Assignment for Weights and Biases CI/CD with Github MLOps
+Sat Nov  4 21:21:04 UTC 2023
